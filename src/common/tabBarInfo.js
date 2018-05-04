@@ -12,31 +12,31 @@ import MyPage from 'routes/My';
 export const tabBarInfo = [{
   title: '首页',
   key: 'Homoe',
-  iconUrl: 'https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg',
-  selectedIconUrl: 'https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg',
+  iconUrl: './images/tarbar/home.png',
+  selectedIconUrl: './images/tarbar/home_select.png',
   Component: HomePage
 }, {
   title: '分类',
   key: 'Classify',
-  iconUrl: 'https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg',
-  selectedIconUrl: 'https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg',
+  iconUrl: './images/tarbar/classify.png',
+  selectedIconUrl: './images/tarbar/classify_select.png',
   Component: ClassifyPage
 }, {
   title: '在线咨询',
   key: 'OnlineAsk',
-  iconUrl: 'https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg',
-  selectedIconUrl: 'https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg',
+  iconUrl: './images/tarbar/online_ask.png',
+  selectedIconUrl: './images/tarbar/online_ask_select.png',
   Component: OnlineAskPage
 }, {
   title: '资讯',
   key: 'Information',
-  iconUrl: 'https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg',
-  selectedIconUrl: 'https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg',
+  iconUrl: './images/tarbar/information.png',
+  selectedIconUrl: './images/tarbar/information_select.png',
   Component: InformationPage
 }, {
   title: '我的',
   key: 'My',
-  iconUrl: 'https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg',
-  selectedIconUrl: 'https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg',
+  iconUrl: './images/tarbar/my.png',
+  selectedIconUrl: './images/tarbar/my_select.png',
   Component: MyPage
 }];
