@@ -1,0 +1,19 @@
+.navbar{
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+  .navbarleft,
+  .navbarright{
+    width: 10%;
+    float: left;
+  }
+  .navbarconten{
+    width: 80%;
+    float: left;
+  }
+  :global{
+    .am-search{
+      background-color: transparent;
+    }
+  }
+}
