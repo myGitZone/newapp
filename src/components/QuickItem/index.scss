@@ -1,0 +1,14 @@
+.quick-item {
+  display: flex;
+  .pic{
+    img{
+      width: 4rem;
+      height: 4rem;
+      margin: 2rem 1.5rem 3rem 2rem;
+    }
+  }
+  .content{
+    font-size: 1rem;
+    flex: 1;
+  }
+}

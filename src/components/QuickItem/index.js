@@ -4,11 +4,19 @@
  * @Description:
  */
 import React from 'react';
+import styles from './index.scss';
 
 class QuickItem extends React.PureComponent {
   render() {
     return (
-      <div>QuickItem</div>
+      <div className={styles['quick-item']}>
+        <div className={styles.pic}>
+          <img src="./images/home/law.png" alt="" />
+        </div>
+        <div className={styles.content}>
+          dddd
+        </div>
+      </div>
     );
   }
 }

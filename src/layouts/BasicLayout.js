@@ -8,7 +8,6 @@ import { TabBar } from 'antd-mobile';
 
 import { tabBarInfo } from '../common/tabBarInfo';
 
-
 class BasicLayout extends React.PureComponent {
   state = {
     selectedTab: tabBarInfo[0].key
@@ -22,7 +21,13 @@ class BasicLayout extends React.PureComponent {
 
   render() {
     return (
-      <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}>
+      <div style={{
+        position: 'fixed',
+        height: '100%',
+        width: '100%',
+        top: 0
+      }}
+      >
         <TabBar
           unselectedTintColor="#949494"
           tintColor="#33A3F4"
@@ -36,15 +41,15 @@ class BasicLayout extends React.PureComponent {
                   title={item.title}
                   key={item.key}
                   icon={<div style={{
-                    width: '22px',
-                    height: '22px',
-                    background: `url(${item.iconUrl}) center center /  21px 21px no-repeat`
+                    width: '1.5rem',
+                    height: '1.5rem',
+                    background: `url(${item.iconUrl}) center center /  1.5rem 1.5rem no-repeat`
                   }}
                   />}
                   selectedIcon={<div style={{
-                    width: '22px',
-                    height: '22px',
-                    background: `url(${item.selectedIconUrl}) center center /  21px 21px no-repeat`
+                    width: '1.5rem',
+                    height: '1.5rem',
+                    background: `url(${item.selectedIconUrl}) center center /  1.5rem 1.5rem no-repeat`
                   }}
                   />}
                   selected={this.state.selectedTab === item.key}

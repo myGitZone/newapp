@@ -34,7 +34,8 @@
   //返回root元素字体计算结果
   function _getNewFontSize() {
     // var scale = designHeight !== 0 ? Math.min(win.innerWidth / designWidth, win.innerHeight / designHeight) : win.innerWidth / designWidth;
-    const scale = win.innerWidth / designWidth;
+    var dpr = window.devicePixelRatio;
+    var scale = win.innerWidth * dpr / designWidth;
 
     return parseInt(scale * 10000 * designFontSize) / 10000;
   }
@@ -64,7 +65,7 @@
     }, 300);
   }, false);
 })(window, {
-  designWidth: 1920,
+  designWidth: 1080,
   designHeight: 1080,
   designFontSize: 16,
   callback: function (argument) {
