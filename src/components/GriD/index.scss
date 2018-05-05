@@ -1,0 +1,14 @@
+.grid{
+  display: flex;
+  flex-wrap:wrap;
+  background: #fff;
+  margin: .85rem 0;
+  padding-top: 2rem;
+  .griditme{
+    width: 33.33%;
+    padding: 0 0.925rem 1.85rem 0.9rem
+  }
+  img{
+    width: 100%;
+  }
+}
