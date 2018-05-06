@@ -1,12 +1,9 @@
-.navbar {
+.navbar{
   display: flex;
+  flex-wrap:wrap;
   width: 100%;
   overflow: hidden;
-  .navbarleft,
-  .navbarright {
-    line-height: 44px;
-  }
-  .navbarconten {
+  .navbarconten{
     flex: 1;
   }
   & * {
