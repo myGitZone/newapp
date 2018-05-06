@@ -35,7 +35,7 @@
   function _getNewFontSize() {
     // var scale = designHeight !== 0 ? Math.min(win.innerWidth / designWidth, win.innerHeight / designHeight) : win.innerWidth / designWidth;
     var dpr = window.devicePixelRatio;
-    var scale = win.innerWidth * dpr / designWidth;
+    var scale = win.innerWidth * 2 / designWidth;
 
     return parseInt(scale * 10000 * designFontSize) / 10000;
   }

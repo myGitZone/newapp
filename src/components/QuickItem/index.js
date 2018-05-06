@@ -8,13 +8,15 @@ import styles from './index.scss';
 
 class QuickItem extends React.PureComponent {
   render() {
+    const { icon, title, desc } = this.props;
     return (
       <div className={styles['quick-item']}>
         <div className={styles.pic}>
-          <img src="./images/home/law.png" alt="" />
+          <img src={icon} alt="" />
         </div>
         <div className={styles.content}>
-          dddd
+          <h2>{title}</h2>
+          <p>{desc}</p>
         </div>
       </div>
     );

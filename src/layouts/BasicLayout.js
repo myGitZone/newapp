@@ -41,15 +41,15 @@ class BasicLayout extends React.PureComponent {
                   title={item.title}
                   key={item.key}
                   icon={<div style={{
-                    width: '1.5rem',
-                    height: '1.5rem',
-                    background: `url(${item.iconUrl}) center center /  1.5rem 1.5rem no-repeat`
+                    width: '2rem',
+                    height: '2rem',
+                    background: `url(${item.iconUrl}) center center /  2rem 2rem no-repeat`
                   }}
                   />}
                   selectedIcon={<div style={{
-                    width: '1.5rem',
-                    height: '1.5rem',
-                    background: `url(${item.selectedIconUrl}) center center /  1.5rem 1.5rem no-repeat`
+                    width: '2rem',
+                    height: '2rem',
+                    background: `url(${item.selectedIconUrl}) center center /  2rem 2rem no-repeat`
                   }}
                   />}
                   selected={this.state.selectedTab === item.key}

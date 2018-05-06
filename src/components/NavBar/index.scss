@@ -1,21 +1,19 @@
-.navbar{
+.navbar {
+  display: flex;
   width: 100%;
-  padding: 1rem;
   overflow: hidden;
   .navbarleft,
-  .navbarright{
-    width: 10%;
-    float: left;
+  .navbarright {
+    line-height: 44px;
   }
-  .navbarconten{
-    width: 80%;
-    float: left;
+  .navbarconten {
+    flex: 1;
   }
-  & *{
+  & * {
     box-sizing: content-box !important;
   }
-  :global{
-    .am-search{
+  :global {
+    .am-search {
       background-color: transparent;
     }
   }

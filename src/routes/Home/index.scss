@@ -1,11 +1,48 @@
-.banner{
+.banner {
   width: 100%;
 }
-.quick{
-  display: flex;
-  margin: .5rem 0;
+
+.quick-container {
+  margin: 1rem 0;
 }
-.item{
+
+.quick {
+  display: flex;
+}
+
+.line {
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.item {
   flex: 1;
-  background-color: red;
+  background-color: #fff;
+  &:nth-child(1) {
+    border-right: 1px solid #d6d6d6;
+  }
+}
+
+.map {
+  width: 44px;
+  height: 44px;
+  background-image: url("./images/map.png");
+  background-position: center;
+  background-size: 65%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+}
+
+.more {
+  float: right;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+}
+.dynamic{
+  display: flex;
 }

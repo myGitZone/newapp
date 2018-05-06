@@ -1,0 +1,49 @@
+$blue: #20a0fe;
+$red: #ff6969;
+$green: #34b558;
+$black: #333333;
+$inlineBlock: inline-block;
+$block: block;
+$titleHeight: 5rem;
+.panel {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  .title {
+    position: relative;
+    height: $titleHeight;
+    line-height: $titleHeight;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.item-container {
+  ul {
+    width: 100%;
+    padding-top: 1.25rem;
+    overflow: auto;
+    list-style: none;
+    li {
+      width: 33.3333333%;
+      float: left;
+      text-align: center;
+      em {
+        display: $block;
+        height: 1rem;
+        color: $black;
+        font-size: 0.6rem;
+        font-style: normal;
+        line-height: 1rem;
+        border-right: 1px solid #e3e3e3;
+      }
+      span {
+        display: $block;
+        height: 3.3rem;
+        font-size: 1.5rem;
+        line-height: 3.3rem;
+      }
+    }
+  }
+}

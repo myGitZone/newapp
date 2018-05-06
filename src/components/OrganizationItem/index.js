@@ -5,12 +5,15 @@
  */
 import React from 'react';
 
-class OrganizationItem extends React.PureComponent {
-  render() {
-    return (
-      <div>OrganizationItem</div>
-    );
-  }
-}
+import styles from './index.scss';
+
+const OrganizationItem = ({ title, icon }) => {
+  return (
+    <article className={styles.wrapper}>
+      <div className={styles.pic} style={{ backgroundImage: `url('${icon}')` }} />
+      <div className={styles.title}>{title}</div>
+    </article>
+  );
+};
 
 export default OrganizationItem;
