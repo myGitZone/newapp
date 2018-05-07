@@ -9,6 +9,7 @@ import NavBar from 'components/NavBar';
 import Panel from 'components/Panel';
 import OrganizationItem from 'components/OrganizationItem';
 import Dynamic from 'components/Dynamic';
+import Recommend from 'components/Recommend';
 
 
 import styles from './index.scss';
@@ -91,6 +92,7 @@ class HomePage extends React.PureComponent {
             }
           </div>
         </Panel>
+        {/* 政法动态 */}
         <Panel title={<div>政法动态<span className={styles.more}>查看更多</span></div>}>
           <div className={styles.dynamic}>
             <Dynamic icon="./images/home/dynamic_sfj.png" title="司法局" subtitle="查找司法机构与法工" />
@@ -100,6 +102,16 @@ class HomePage extends React.PureComponent {
             <Dynamic icon="./images/home/ceshi.png" title="司法局" subtitle="查找司法机构与法工" />
             <Dynamic icon="./images/home/ceshi1.png" title="维稳综治" subtitle="查找司法机构与法工" />
           </div>
+        </Panel>
+        {/* 推荐律师 */}
+        <Panel title={<div>推荐律师<span className={styles.more}>查看更多</span></div>}>
+          <Recommend />
+          <div style={{ margin: '0 1rem' }} className={styles.line} />
+          <Recommend />
+          <div style={{ margin: '0 1rem' }} className={styles.line} />
+          <Recommend />
+          <div style={{ margin: '0 1rem' }} className={styles.line} />
+          <Recommend />
         </Panel>
       </div>
     );

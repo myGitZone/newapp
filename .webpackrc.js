@@ -2,7 +2,7 @@ const path = require('path');
 export default {
   entry: './src/index.js',
   extraBabelPlugins: [
-    ['import', { libraryName: 'antd-mobile', libraryDirectory: 'es', style: true }],
+    ['import', { libraryName: 'antd-mobile', libraryDirectory: 'es', style: true }]
   ],
   env: {
     development: {
